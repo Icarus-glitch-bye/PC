@@ -59,6 +59,16 @@
   </header>
 
   <script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('active');
+  });
+</script>
+
+  <script>
     const pcs = [
       {
         title: "Beast 4090",
@@ -157,15 +167,6 @@
     });
   </script>
 
-  <script>
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
-
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    hamburger.classList.toggle('active');
-  });
-</script>
 
 </body>
 </html>
