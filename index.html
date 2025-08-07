@@ -88,5 +88,15 @@
     <div class="item" style="--n: 8"><img src="images\Rainbow.webp" alt="Player Two" /></div>
   </div>
 
+  <script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>
