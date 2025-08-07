@@ -12,6 +12,11 @@
   <!-- NAVIGATION BAR -->
   <nav class="navbar">
     <div class="nav-logo">JMPC</div>
+    <button class="hamburger" aria-label="Toggle navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
     <ul class="nav-links">
       <li><a href="index.html">HOME</a></li>
       <li><a href="PCs.html">PCS</a></li>
@@ -43,6 +48,16 @@
             </a>
         </div>
     </div>
+
+    <script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('active');
+  });
+</script>
 
 
 </body>
